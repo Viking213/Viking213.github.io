@@ -3,8 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <title>Activities – Noah Terauchi</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>/* same CSS as index.html */</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 2rem;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    button {
+      margin: 2rem;
+      padding: 0.5em 1em;
+      font-size: 1rem;
+      color: #ddd;
+      background: transparent;
+      border: 2px solid #9a7ec7;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #9a7ec7;
+      color: #000;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -14,7 +71,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section style="margin-top:2rem;">
+  <section>
     <h2>Extracurriculars & Interests</h2>
     <ul>
       <li>Mountain biking through local trails</li>
@@ -25,7 +82,6 @@
     <p>I take pride in staying active, building community connections, and learning through practical experience.</p>
   </section>
 
-  <button onclick="history.back()" style="margin:2rem; padding:0.5em 1em; font-size:1rem; color:#ddd;
-          background:transparent; border:2px solid #9a7ec7; border-radius:4px;">Back</button>
+  <button onclick="history.back()">Back</button>
 </body>
 </html>
