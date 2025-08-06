@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Noah Terauchi – Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    /* shared CSS */
+    body { margin:0; padding:0; font-family:'Helvetica',sans-serif; color:#eee;
+           background: url('background.jpg') center/cover fixed; }
+    nav { background: rgba(0,0,0,0.7); padding:1rem; text-align:center;
+          position:sticky; top:0; z-index:100; }
+    nav a { color:#ddd; margin:0 1rem; text-decoration:none;
+            font-weight:bold; font-size:1.1rem; }
+    nav a:hover { color:#9a7ec7; }
+    header { text-align:center; padding:4rem 1rem; background: rgba(0,0,0,0.6); }
+    header h1 { font-size:2.5rem; color:#d1c8f7; margin-bottom:0.5rem; }
+    header h2 { font-size:1.2rem; color:#ccc; margin-bottom:1rem; }
+    header p { font-size:1.1rem; color:#ddd; line-height:1.5;
+               max-width:800px; margin:0 auto; }
+    .quote { margin-top:1.5rem; font-style:italic; color:#aaa; font-size:1rem; }
+    section { max-width:700px; margin:2rem auto; background: rgba(0,0,0,0.6);
+              border-radius:8px; padding:1.5rem; }
+    section h2 { color:#b8a2e3; margin-bottom:0.5rem; border-bottom:2px solid #7a63b5;
+                 padding-bottom:0.25rem; }
+    footer { text-align:center; padding:1rem; font-size:0.9rem; color:#bbb;
+             background: rgba(0,0,0,0.6); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="activities.html">Activities</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Noah Terauchi</h1>
+    <h2>Tri‑City College Prep, Prescott, Arizona</h2>
+    <p>I am an aspiring pilot attending Tri‑City College Prep, and I work with Artizan Woodworks LLC—a local woodworking business. I enjoy blending technical skill with dedication and passion for craftsmanship.</p>
+    <p class="quote">*“But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self‑control.”*<br><strong>Galatians 5:22‑23</strong></p>
+  </header>
+
+  <section>
+    <h2>Extracurricular Activities</h2>
+    <p>In my free time, I enjoy mountain biking, playing soccer, and connecting with others through networking. I also gain hands‑on experience at Artizan Woodworks, where I’ve developed skills like electrical work, caulking, painting, and assembly. I value continuous learning, technical skill‑building, and working as part of a team.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:noahterauchitcp@gmail.com" style="color:#9a7ec7;">noahterauchitcp@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/the.hidden.streetlight" style="color:#9a7ec7;">@the.hidden.streetlight</a></p>
+  </section>
+
+  <footer>© <span id="year"></span> Noah Terauchi</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
