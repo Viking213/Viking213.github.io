@@ -4,7 +4,23 @@
   <meta charset="UTF-8">
   <title>Contact – Noah Terauchi</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>/* same CSS as index.html */</style>
+  <style>
+    body { margin:0; padding:0; font-family:'Helvetica',sans-serif; color:#eee;
+           background: url('background.jpg') center/cover fixed; }
+    nav { background: rgba(0,0,0,0.7); padding:1rem; text-align:center;
+          position:sticky; top:0; z-index:100; }
+    nav a { color:#ddd; margin:0 1rem; text-decoration:none;
+            font-weight:bold; font-size:1.1rem; }
+    nav a:hover { color:#9a7ec7; }
+    section { max-width:700px; margin:2rem auto; background: rgba(0,0,0,0.6);
+              border-radius:8px; padding:1.5rem; }
+    section h2 { color:#b8a2e3; margin-bottom:0.5rem; border-bottom:2px solid #7a63b5;
+                 padding-bottom:0.25rem; }
+    a { color:#9a7ec7; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    footer { text-align:center; padding:1rem; font-size:0.9rem; color:#bbb;
+             background: rgba(0,0,0,0.6); }
+  </style>
 </head>
 <body>
   <nav>
@@ -14,13 +30,13 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section style="margin-top:2rem;">
+  <section>
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:noahterauchitcp@gmail.com" style="color:#9a7ec7;">noahterauchitcp@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/the.hidden.streetlight" style="color:#9a7ec7;">@the.hidden.streetlight</a></p>
+    <p>Email: <a href="mailto:noahterauchitcp@gmail.com">noahterauchitcp@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/the.hidden.streetlight">@the.hidden.streetlight</a></p>
   </section>
 
-  <button onclick="history.back()" style="margin:2rem; padding:0.5em 1em; font-size:1rem; color:#ddd;
-          background:transparent; border:2px solid #9a7ec7; border-radius:4px;">Back</button>
+  <footer>© <span id="year"></span> Noah Terauchi</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
